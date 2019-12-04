@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Line Chart | Circuits4you.com
+    // For offline ESP graphs see this tutorial https://circuits4you.com/2018/03/10/esp8266-jquery-and-ajax-web-server/
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    link(href='/css/style.css', rel='stylesheet', type='text/css')
+    link(crossorigin='anonymous', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', rel='stylesheet')
+  body
+    div(style='text-align:center;')
+      br
+      | Real Time Data Humidity, Temperature Logging with Graphs
+    .chart-container(style='height:350px; position: relative; width:100%')
+      canvas#Chart(height='400', width='400')
+    div
+      table#dataTable
+        tbody
+          tr
+            th Time
+            th Temperaure (°C)
+            th Humidity (%)
+    br
+    br
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js')
+    script(src='/js/script.js')
+      </body>
+      </html>
